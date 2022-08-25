@@ -1,0 +1,37 @@
+/* responsive start */
+@media only screen and (max-width: 992px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .menu li{
+        margin-right: 20px;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logo-div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        display: inline;
+    }
+    .menu li{
+        margin-right: 20px;
+    }
+    .menu a{
+        font-size: 18px;
+    }
+    .humberger{
+        display: block;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+}
+/* responsive end */
