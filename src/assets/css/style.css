@@ -280,14 +280,18 @@ a {
 /* home page area end */
 
 /* about page area start */
-.projectImg{
+.projectImg {
     width: 100%;
-    height: 100%;
 }
 
-.projectSlider .alice-carousel__stage-item{
-    margin: 0px -70px;
+.projectSlider .alice-carousel__stage-item {
+    transform: skew(-20deg);
+    margin: 0px 10px;
 }
+
+/* .projectSlider .alice-carousel__stage-item{
+    margin: 0px -70px;
+} */
 
 .p_sliderBtn{
     cursor: pointer;

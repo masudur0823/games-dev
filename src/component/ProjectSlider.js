@@ -3,7 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 // slider image
-import si1 from "../assets/images/projectImg1.png";
+import si1 from "../assets/images/projectImg1.jpg";
 import si2 from "../assets/images/projectImg2.png";
 // slider image
 
@@ -15,7 +15,7 @@ import newsNext from "../assets/images/icons/right-arrow.svg";
 const responsive = {
   0: { items: 2 },
   568: { items: 3 },
-  1024: { items: 3 },
+  1024: { items: 4 },
 };
 
 const items = [
@@ -23,37 +23,16 @@ const items = [
     <img src={si1} className="projectImg" alt="" />
   </div>,
   <div className="item" data-value="1">
-    <img src={si2} className="projectImg" alt="" />
+    <img src={si1} className="projectImg" alt="" />
   </div>,
   <div className="item" data-value="1">
     <img src={si1} className="projectImg" alt="" />
   </div>,
   <div className="item" data-value="1">
-    <img src={si2} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
     <img src={si1} className="projectImg" alt="" />
   </div>,
   <div className="item" data-value="1">
-    <img src={si2} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
     <img src={si1} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
-    <img src={si2} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
-    <img src={si2} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
-  </div>,
-  <div className="item" data-value="1">
-    <img src={si2} className="projectImg" alt="" />
   </div>,
 ];
 
