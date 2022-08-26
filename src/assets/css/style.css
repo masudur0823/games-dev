@@ -43,12 +43,12 @@ a {
     color: #27325D !important;
 }
 
-.con-75{
+.con-75 {
     width: 75%;
     margin: 0 auto;
 }
 
-.hr_line{
+.hr_line {
     border-bottom: 1px solid rgba(143, 143, 143, 0.5);
 }
 
@@ -180,7 +180,7 @@ a {
 /* footer component area end */
 
 /* banner component area start */
-.bannerImg{
+.bannerImg {
     background: url(../images/bg-aboutus.png);
     border-radius: 20px;
     width: 100%;
@@ -190,6 +190,7 @@ a {
     display: grid;
     place-items: center;
 }
+
 /* banner component area end */
 
 /* home page area start */
@@ -282,6 +283,8 @@ a {
 /* about page area start */
 .projectImg {
     width: 100%;
+    min-height: 500px;
+    object-fit: cover;
 }
 
 .projectSlider .alice-carousel__stage-item {
@@ -293,8 +296,95 @@ a {
     margin: 0px -70px;
 } */
 
-.p_sliderBtn{
+.p_sliderBtn {
     cursor: pointer;
 }
 
 /* about page area end */
+
+/* Dev Blogs page area start */
+.devBlogs_main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
+    margin-bottom: 80px;
+}
+
+.devBlog_card {
+    margin-bottom: 40px;
+}
+
+.devBlog_card:nth-of-type(2) {
+    opacity: 0.7;
+}
+
+.devBlog_card:nth-of-type(3) {
+    opacity: 0.4;
+}
+
+.devBlog_card .title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: capitalize;
+}
+
+.devBlog_card .desc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #8F8F8F;
+}
+
+.devBlog_card button {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    background: #0054B6;
+    border-radius: 30px;
+    border: 0;
+    padding: 8px 25px;
+}
+
+.devBlog_card .date {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.all_post_text {
+    position: relative;
+    display: inline-block;
+}
+
+.all_post_text::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #27325D;
+}
+
+.devblogs_ul {
+    color: #8F8F8F;
+}
+
+.devblogs_ul li {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.devBlog_image {
+    width: 452px;
+    height: 334px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+/* Dev Blogs page area end */

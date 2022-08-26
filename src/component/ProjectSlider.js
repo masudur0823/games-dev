@@ -3,8 +3,11 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 // slider image
-import si1 from "../assets/images/projectImg1.jpg";
-import si2 from "../assets/images/projectImg2.png";
+import si1 from "../assets/images/projectImg1.png";
+import si2 from "../assets/images/projectImg2.jpg";
+import si3 from "../assets/images/projectImg3.png";
+import si4 from "../assets/images/projectImg4.png";
+import si5 from "../assets/images/projectImg5.png";
 // slider image
 
 // button
@@ -20,19 +23,29 @@ const responsive = {
 
 const items = [
   <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
+    <a href="#!">
+      <img src={si2} className="projectImg" alt="" />
+    </a>
   </div>,
   <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
+    <a href="#!">
+      <img src={si3} className="projectImg" alt="" />
+    </a>
   </div>,
   <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
+    <a href="#!">
+      <img src={si4} className="projectImg" alt="" />
+    </a>
   </div>,
   <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
+    <a href="#!">
+      <img src={si5} className="projectImg" alt="" />
+    </a>
   </div>,
   <div className="item" data-value="1">
-    <img src={si1} className="projectImg" alt="" />
+    <a href="#!">
+      <img src={si1} className="projectImg" alt="" />
+    </a>
   </div>,
 ];
 
@@ -45,12 +58,12 @@ class ProjectSlider extends Component {
     return (
       <div className="projectSlider">
         <AliceCarousel
-          // autoPlay
+          autoPlay
           autoPlayStrategy="none"
           autoPlayInterval={3000}
           animationDuration={1000}
           infinite
-          mouseTracking
+          mouseTracking={false}
           disableDotsControls
           disableButtonsControls
           items={items}
