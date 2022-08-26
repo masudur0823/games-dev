@@ -37,6 +37,24 @@ const items = [
   <div className="item" data-value="1">
     <img src={si2} className="projectImg" alt="" />
   </div>,
+  <div className="item" data-value="1">
+    <img src={si1} className="projectImg" alt="" />
+  </div>,
+  <div className="item" data-value="1">
+    <img src={si2} className="projectImg" alt="" />
+  </div>,
+  <div className="item" data-value="1">
+    <img src={si1} className="projectImg" alt="" />
+  </div>,
+  <div className="item" data-value="1">
+    <img src={si2} className="projectImg" alt="" />
+  </div>,
+  <div className="item" data-value="1">
+    <img src={si1} className="projectImg" alt="" />
+  </div>,
+  <div className="item" data-value="1">
+    <img src={si2} className="projectImg" alt="" />
+  </div>,
 ];
 
 const navItem = (item, i) => {
@@ -48,7 +66,7 @@ class ProjectSlider extends Component {
     return (
       <div className="projectSlider">
         <AliceCarousel
-          autoPlay
+          // autoPlay
           autoPlayStrategy="none"
           autoPlayInterval={3000}
           animationDuration={1000}
