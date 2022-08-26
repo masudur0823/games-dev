@@ -277,6 +277,19 @@ a {
     height: 519px;
 }
 
-
-
 /* home page area end */
+
+/* about page area start */
+.projectImg{
+    width: 100%;
+    height: 100%;
+}
+
+.projectSlider .alice-carousel__stage-item{
+    margin: 0px -70px;
+}
+
+.p_sliderBtn{
+    cursor: pointer;
+}
+/* about page area end */

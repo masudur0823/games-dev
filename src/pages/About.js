@@ -21,7 +21,7 @@ function About() {
       </div>
 
       <div className="contaier py-5">
-        <h1 className='title_one text-center'>OUR Projects</h1>
+        <h1 className='title_one text-center mb-3 mb-md-5'>OUR Projects</h1>
         <ProjectSlider />
       </div>
     </>

@@ -44,6 +44,7 @@
     .manImg {
         height: 390px;
     }
+
     .home_sec3_child2 h1 {
         font-size: 45px;
         line-height: 50px;
@@ -52,8 +53,19 @@
     .home_sec3_child2 img {
         width: 60px;
     }
+
     .home_s3 {
         min-height: 417px;
+    }
+
+    .projectSlider .alice-carousel__stage-item {
+        margin: 0px -50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .projectSlider .alice-carousel__stage-item {
+        margin: 0px -40px;
     }
 }
 
@@ -109,30 +121,34 @@
         font-size: 30px;
         line-height: 37px;
     }
+
     .home_s3 {
         min-height: 284px;
     }
+
     .manImg {
         height: 269px;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .home_section1 img{
+    .home_section1 img {
         width: 220px !important;
     }
+
     .home_slider_arrow {
         width: 50px;
     }
 
-    .home_s3{
+    .home_s3 {
         grid-template-columns: 1fr;
     }
 
-    .home_sec3_child1{
+    .home_sec3_child1 {
         order: 2;
     }
-    .home_sec3_child2{
+
+    .home_sec3_child2 {
         order: 1;
         justify-content: center;
     }
@@ -146,11 +162,17 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
     .home_sec3_child2 img {
         width: 40px;
     }
+
     .home_sectionThree {
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    }
+
+    .projectSlider .alice-carousel__stage-item {
+        margin: 0px -30px;
     }
 }
 
@@ -159,6 +181,7 @@
         font-size: 30px;
         line-height: 45px;
     }
+
     .logo {
         width: 50px;
         height: 50px;
@@ -200,6 +223,10 @@
         margin-top: 8px;
         text-align: center;
     }
+
+    .p_sliderBtn{
+        width: 50px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,14 +237,16 @@
     .copy-right-text {
         font-size: 12px;
     }
-    .home-slider{
+
+    .home-slider {
         width: 100%;
     }
+
     .home_slider_arrow {
         width: 30px;
     }
 
-    .con-75{
+    .con-75 {
         width: 100%;
     }
 
@@ -232,9 +261,16 @@
     .home_sectionThree {
         clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
     }
+
     .home_sec3_child2 h1 {
         font-size: 22px;
         line-height: 35px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .projectSlider .alice-carousel__stage-item {
+        margin: 0px -25px;
     }
 }
 
