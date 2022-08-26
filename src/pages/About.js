@@ -1,8 +1,13 @@
 import React from 'react'
+import Banner from '../component/Banner'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+      <div className="container">
+        <Banner title="About Us" />
+      </div>
+    </>
   )
 }
 

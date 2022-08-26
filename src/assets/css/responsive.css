@@ -1,37 +1,241 @@
 /* responsive start */
+@media only screen and (min-width: 1400px) {
+    .fm_child1 {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .footer-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .footer-menu a {
+        font-size: 18px;
+    }
+
+    .copy-right-text {
+        font-size: 18px;
+    }
+
+    .fm_child2 div {
+        width: 76%;
+    }
+
+    .fm_child2 img {
+        width: 50px;
+    }
+
+    .home_section1 h5 {
+        font-size: 19px;
+    }
+
+    .home_section1 p {
+        font-size: 60px;
+        line-height: 71px;
+    }
+
+    .title_one {
+        font-size: 60px;
+        line-height: 71px;
+    }
+
+    .manImg {
+        height: 390px;
+    }
+    .home_sec3_child2 h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .home_sec3_child2 img {
+        width: 60px;
+    }
+    .home_s3 {
+        min-height: 417px;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .logo {
         width: 80px;
         height: 80px;
     }
-    .menu li{
+
+    .menu ul {
+        margin-bottom: 8px;
+    }
+
+    .menu a:hover::after {
+        bottom: -6px;
+        border-bottom-width: 11px;
+        border-left-width: 5px;
+        border-right-width: 5px;
+    }
+
+    .menu li {
         margin-right: 20px;
     }
-    .menu a{
+
+    .menu a {
         font-size: 18px;
     }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .fm_child2 div {
+        width: 100%;
+    }
+
+    .home_section1 p {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .home_section1 h5 {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .title_one {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .home_sec3_child2 h1 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .home_s3 {
+        min-height: 284px;
+    }
+    .manImg {
+        height: 269px;
+    }
 }
+
+@media only screen and (max-width: 767px) {
+    .home_section1 img{
+        width: 220px !important;
+    }
+    .home_slider_arrow {
+        width: 50px;
+    }
+
+    .home_s3{
+        grid-template-columns: 1fr;
+    }
+
+    .home_sec3_child1{
+        order: 2;
+    }
+    .home_sec3_child2{
+        order: 1;
+        justify-content: center;
+    }
+
+    .home_s3 {
+        min-height: 491px;
+    }
+
+    .manImg {
+        height: 269px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .home_sec3_child2 img {
+        width: 40px;
+    }
+    .home_sectionThree {
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    }
+}
+
 @media only screen and (max-width: 768px) {
-    .logo-div{
-        display: flex;
-        justify-content: space-between;
+    .title_one {
+        font-size: 30px;
+        line-height: 45px;
     }
     .logo {
         width: 50px;
         height: 50px;
         display: inline;
     }
-    .menu li{
+
+    .menu li {
         margin-right: 20px;
     }
-    .menu a{
+
+    .menu a {
         font-size: 18px;
     }
-    .humberger{
+
+    .humberger {
         display: block;
     }
-}
-@media only screen and (max-width: 600px) {
 
+    .footer_main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .fm_child1 {
+        justify-content: center;
+        order: 2;
+    }
+
+    .fm_child2 {
+        order: 1;
+        justify-content: center;
+    }
+
+    .fm_child2 img {
+        width: 25px;
+    }
+
+    .copy-right-text {
+        margin-top: 8px;
+        text-align: center;
+    }
 }
+
+@media only screen and (max-width: 600px) {
+    .menu a {
+        font-size: 12px;
+    }
+
+    .copy-right-text {
+        font-size: 12px;
+    }
+    .home-slider{
+        width: 100%;
+    }
+    .home_slider_arrow {
+        width: 30px;
+    }
+
+    .con-75{
+        width: 100%;
+    }
+
+    .para_one {
+        font-size: 18px;
+        line-height: 29px;
+        text-align: justify !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .home_sectionThree {
+        clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 100%);
+    }
+    .home_sec3_child2 h1 {
+        font-size: 22px;
+        line-height: 35px;
+    }
+}
+
 /* responsive end */

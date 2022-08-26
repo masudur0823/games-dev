@@ -1,8 +1,15 @@
 import React from 'react'
+import Banner from '../component/Banner'
 
 function DevBlogs() {
   return (
-    <div>DevBlogs</div>
+    <>
+      <>
+        <div className="container">
+          <Banner title="Dev Blogs" />
+        </div>
+      </>
+    </>
   )
 }
 
