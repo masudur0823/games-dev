@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../About";
+import DashBoard from "../DashBoard";
 import DevBlogs from "../DevBlogs";
 import Home from "../Home";
 import Login from "../Login";
@@ -14,6 +15,7 @@ function Router() {
 
         {/* admin route */}
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<DashBoard />} />
         {/* admin route */}
 
       </Routes>

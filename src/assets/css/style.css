@@ -477,3 +477,115 @@ a {
 }
 
 /* login page area end */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+.admin_layout_bg {
+    background: url(../images/admin-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.admin_container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.admin_layout {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    min-height: 500px;
+    grid-gap: 30px;
+}
+
+.admin_layout_child1 {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+.admin_logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+.admin_Sidebar li {
+    margin-bottom: 15px;
+}
+
+.admin_Sidebar a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 10px;
+    padding: 23px 0px;
+    border-radius: 15px 15px 0px 15px;
+    position: relative;
+    left: 15px;
+    padding-left: 20px;
+}
+
+.admin_Sidebar a:hover {
+    background: #0054B6;
+    color: #fff !important;
+}
+
+.admin_Sidebar a:hover::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    border-top: 16px solid transparent;
+    border-bottom: 0px solid #002959;
+    border-left: 0px solid transparent;
+    border-right: 15px solid #002959;
+    transform: rotate(179deg);
+}
+
+.admin_Sidebar a:hover path {
+    stroke: #fff;
+}
+
+.admin_active_nav {
+    background: #0054B6;
+    color: #fff !important;
+}
+
+.admin_active_nav::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    border-top: 16px solid transparent;
+    border-bottom: 0px solid #002959;
+    border-left: 0px solid transparent;
+    border-right: 15px solid #002959;
+    transform: rotate(179deg);
+}
+
+.admin_menu_icon {
+    width: 24px;
+    height: 24px;
+}
+
+.admin_menu_icon_active {
+    color: #fff;
+}
+
+.admin_menu_icon_active path {
+    stroke: #fff;
+    fill: transparent;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
