@@ -13,7 +13,7 @@ function Router() {
         <Route path="/devblogs" element={<DevBlogs />} />
 
         {/* admin route */}
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         {/* admin route */}
 
       </Routes>

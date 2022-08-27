@@ -62,20 +62,23 @@
         width: 348px;
         height: 240px;
     }
+
     .devBlog_card .title {
         font-size: 30px;
         line-height: 30px;
     }
+
     .devBlog_card .desc {
         font-size: 14px;
         line-height: 24px;
     }
+
     .devBlog_card .date {
         font-size: 15px;
         margin-top: 20px;
     }
 
-    .devBlog_card .date img{
+    .devBlog_card .date img {
         width: 20px;
     }
 
@@ -88,7 +91,7 @@
 
 @media only screen and (max-width: 991px) {
 
-    .devBlogs_main{
+    .devBlogs_main {
         grid-template-columns: 1fr;
     }
 }
@@ -248,14 +251,29 @@
         text-align: center;
     }
 
-    .p_sliderBtn{
+    .p_sliderBtn {
         width: 50px;
     }
+
     .devBlogs_main {
         margin-bottom: 20px;
     }
+
     .projectImg {
         min-height: 398px;
+    }
+
+    .login_main {
+        justify-content: center;
+    }
+
+    .login_div {
+        margin-right: 0vw;
+        margin: 0px 20px;
+    }
+
+    .login-logo {
+        width: 80px;
     }
 }
 
@@ -285,19 +303,47 @@
         line-height: 29px;
         text-align: justify !important;
     }
+
     .devblogs_ul li {
         margin-top: 8px;
     }
 
-    .all_post_text{
+    .all_post_text {
         font-size: 18px;
     }
 
-    .all_post_text::after{
+    .all_post_text::after {
         bottom: -2px;
     }
+
     .projectImg {
         min-height: 300px;
+    }
+
+    .title_two {
+        font-size: 30px;
+        line-height: 23px;
+    }
+
+    .para_two {
+        font-size: 16px;
+    }
+
+
+    .input_field {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .input_field::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .input_right_icon {
+        right: 10px;
     }
 }
 
@@ -311,7 +357,7 @@
         line-height: 35px;
     }
 
-    .devBlog_image{
+    .devBlog_image {
         width: 100%;
     }
 }
