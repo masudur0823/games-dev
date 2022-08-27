@@ -20,7 +20,7 @@ function AdminLayout({ children, lefttitle }) {
     <>
       <div className="admin_layout_bg">
         <div className="admin_mobile_arrow" onClick={handleOpen}>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+          <svg xmlns="http://www.w3.org/2000/svg" className="m_arrow">
             <path
               d="m12.55 37.15-3.3-3.3 9.9-9.9-9.9-9.9 3.3-3.3 13.2 13.2Zm13.1 0-3.3-3.3 9.9-9.9-9.9-9.9 3.3-3.3 13.2 13.2Z"
               fill="#fff"

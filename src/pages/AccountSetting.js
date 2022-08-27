@@ -1,8 +1,13 @@
 import React from 'react'
+import AdminLayout from '../component/AdminLayout/AdminLayout'
 
 function AccountSetting() {
   return (
-    <div>AccountSetting</div>
+    <AdminLayout lefttitle="Account Setting">
+    <div className="dash_div1">
+      <h1>Account Setting</h1>
+    </div>
+  </AdminLayout>
   )
 }
 

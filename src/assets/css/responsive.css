@@ -181,6 +181,7 @@
         top: 0;
         z-index: 999;
         border-radius: 0px;
+        transition: all 0.3s;
     }
 
     .admin_overlay{
@@ -190,6 +191,7 @@
         height: 100%;
         background-color:#0055b6a4;
         z-index: 991;
+        transition: all 0.3s;
     }
 
     .close_icon{
@@ -201,13 +203,14 @@
         color: #fff;
     }
 
-    .admin_mobile_arrow{
+    .admin_mobile_arrow {
         display: block;
         width: 50px;
         height: 50px;
         background-color: #0054B6;
         border-radius: 0px 20px 20px 0px;
-        position: absolute;
+        position: fixed;
+        z-index: 100;
     }
 
 }
@@ -252,9 +255,30 @@
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
     }
 
-    /* .projectSlider .alice-carousel__stage-item {
-        margin: 0px -30px;
-    } */
+    .admin_header_inner{
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    .admin_container{
+        padding: 40px 10px;
+    }
+
+    .admin_logo {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 7px;
+        margin-top: 8px;
+    }
+
+    .admin_Sidebar a{
+        padding: 15px 0px;
+        padding-left: 15px;
+    }
+
+    .admin_Sidebar li {
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -399,6 +423,7 @@
     .input_right_icon {
         right: 10px;
     }
+    
 }
 
 @media only screen and (max-width: 425px) {

@@ -5,42 +5,76 @@ import AddBlogsIcon from "./AddBlogsIcon";
 import SettingsIcon from "./SettingsIcon";
 import ChangePassIcon from "./ChangePassIcon";
 import LogoutIcon from "./LogoutIcon";
+import { NavLink } from "react-router-dom";
+import activeClass from "../../assets/css/adminNav.module.css";
 
 function AdminSidebar(props) {
-  console.log(props.handleClose)
+  console.log(props.handleClose);
   return (
     <>
-      <img src={logo} className="admin_logo" alt="" />
+      <NavLink to="/dashboard">
+        <img src={logo} className="admin_logo" alt="" />
+      </NavLink>
       <ul className="admin_Sidebar list-unstyled">
         <li>
-          <a href="#!" className="admin_active_nav" onClick={props.handleClose}>
-            <DashboardIcon />
+          <NavLink
+            to="/dashboard"
+            onClick={props.handleClose}
+            className={(navInfo) =>
+              navInfo.isActive ? activeClass.admin_active_nav : ""
+            }
+          >
+            <DashboardIcon class={activeClass} />
             Dashboard
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#!" onClick={props.handleClose}>
-            <AddBlogsIcon />
+          <NavLink
+            to="/blog"
+            onClick={props.handleClose}
+            className={(navInfo) =>
+              navInfo.isActive ? activeClass.admin_active_nav : ""
+            }
+          >
+            <AddBlogsIcon class={activeClass} />
             Add Blogs
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#!" onClick={props.handleClose}>
-            <SettingsIcon />
+          <NavLink
+            to="/settings"
+            onClick={props.handleClose}
+            className={(navInfo) =>
+              navInfo.isActive ? activeClass.admin_active_nav : ""
+            }
+          >
+            <SettingsIcon class={activeClass} />
             Account Setting
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#!" onClick={props.handleClose}>
-            <ChangePassIcon />
+          <NavLink
+            to="/changepassword"
+            onClick={props.handleClose}
+            className={(navInfo) =>
+              navInfo.isActive ? activeClass.admin_active_nav : ""
+            }
+          >
+            <ChangePassIcon class={activeClass} />
             Change Password
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="#!" onClick={props.handleClose}>
-            <LogoutIcon />
+          <NavLink
+            to="/login"
+            onClick={props.handleClose}
+            className={(navInfo) =>
+              navInfo.isActive ? activeClass.admin_active_nav : ""
+            }
+          >
+            <LogoutIcon class={activeClass} />
             Logout
-          </a>
+          </NavLink>
         </li>
       </ul>
 

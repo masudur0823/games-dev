@@ -1,5 +1,6 @@
 import logo from "../assets/images/logo.svg";
 import eyeOpen from "../assets/images/icons/eye-open.svg";
+import {Link} from 'react-router-dom'
 
 function Login() {
   return (
@@ -30,7 +31,7 @@ function Login() {
               />
             </button>
           </div>
-          <input type="submit" value="Login" className="Login_btn text-white" />
+          <Link to="/dashboard" className="w-100"><input type="submit" value="Login" className="Login_btn text-white" /></Link>
         </form>
       </div>
     </div>

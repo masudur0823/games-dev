@@ -1,0 +1,25 @@
+.admin_active_nav {
+    background: #0054B6;
+    color: #fff !important;
+}
+
+.admin_active_nav .admin_menu_icon_active {
+    color: #fff;
+}
+
+.admin_active_nav .admin_menu_icon_active path {
+    stroke: #fff;
+    fill: transparent;
+}
+
+.admin_active_nav::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+    border-top: 16px solid transparent;
+    border-bottom: 0px solid #002959;
+    border-left: 0px solid transparent;
+    border-right: 15px solid #002959;
+    transform: rotate(179deg);
+}

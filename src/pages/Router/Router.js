@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "../About";
+import AccountSetting from "../AccountSetting";
 import Blog from "../Blog";
+import ChangePassword from "../ChangePassword";
 import DashBoard from "../DashBoard";
 import DevBlogs from "../DevBlogs";
 import Home from "../Home";
@@ -18,6 +20,8 @@ function Router() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/changepassword" element={<ChangePassword />} />
+        <Route path="/settings" element={<AccountSetting />} />
         {/* admin route */}
 
       </Routes>
