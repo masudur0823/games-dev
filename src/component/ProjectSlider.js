@@ -71,7 +71,7 @@ class ProjectSlider extends Component {
           ref={(el) => (this.Carousel = el)}
         />
         <nav>{items.map(navItem)}</nav>
-        <div className="text-center pt-3 pt-md-5">
+        <div className="d-flex justify-content-center gap-3 gap-lg-5 pt-3 pt-md-5">
           <img
             src={newsPrev}
             className="p_sliderBtn"

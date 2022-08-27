@@ -254,6 +254,9 @@
     .devBlogs_main {
         margin-bottom: 20px;
     }
+    .projectImg {
+        min-height: 398px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -292,6 +295,9 @@
 
     .all_post_text::after{
         bottom: -2px;
+    }
+    .projectImg {
+        min-height: 300px;
     }
 }
 

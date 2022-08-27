@@ -380,6 +380,10 @@ a {
     cursor: pointer;
 }
 
+.devblogs_ul li:hover{
+    color: #0054B6;
+}
+
 .devBlog_image {
     width: 452px;
     height: 334px;

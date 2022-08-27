@@ -10,10 +10,13 @@ import icon4 from '../assets/images/icons/footer-youtube.svg'
 import icon5 from '../assets/images/icons/footer-facebook.svg'
 
 import manImg from '../assets/images/man.png'
+import Header from '../component/Header/Header'
+import Footer from '../component/Footer/Footer'
 
 function Home() {
   return (
     <>
+    <Header />
       {/* home section one start */}
       <section className='home_section1 py-5'>
         <div className="container">
@@ -94,6 +97,7 @@ function Home() {
         </div>
       </section>
       {/* home section four end */}
+      <Footer />
     </>
   )
 }
