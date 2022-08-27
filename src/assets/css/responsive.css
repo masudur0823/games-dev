@@ -89,6 +89,22 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .admin_menu_icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .admin_Sidebar a {
+        font-size: 16px;
+    }
+
+    .admin_layout {
+        grid-template-columns: 265px 1fr;
+        grid-gap: 30px;
+    }
+}
+
 @media only screen and (max-width: 991px) {
 
     .devBlogs_main {
@@ -156,6 +172,44 @@
     .manImg {
         height: 269px;
     }
+    .admin_layout{
+        grid-template-columns: 1fr;
+    }
+    .admin_layout_child1 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        border-radius: 0px;
+    }
+
+    .admin_overlay{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color:#0055b6a4;
+        z-index: 991;
+    }
+
+    .close_icon{
+        font-size: 30px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .admin_mobile_arrow{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: #0054B6;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
