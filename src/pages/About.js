@@ -1,13 +1,11 @@
 import React from "react";
 import Banner from "../component/Banner";
-import Footer from "../component/Footer/Footer";
-import Header from "../component/Header/Header";
+import Layout from "../component/Layout/Layout";
 import ProjectSlider from "../component/ProjectSlider";
 
 function About() {
   return (
-    <>
-      <Header />
+    <Layout>
       <div className="container">
         <Banner title="About Us" />
         <p className="para_one text-center con-75 mb-5">
@@ -32,8 +30,7 @@ function About() {
         <h1 className="title_one text-center mb-3 mb-md-5">OUR Projects</h1>
         <ProjectSlider />
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

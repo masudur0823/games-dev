@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assets/images/logo.svg'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import activeClass from "../../assets/css/nav.module.css";
 
 function Header() {
     return (
@@ -14,10 +15,38 @@ function Header() {
                 <div className="container">
                     <div className="menu">
                         <ul className='list-unstyled'>
-                            <li><NavLink to="/">Home</NavLink></li>
-                            <li><NavLink to="/about">About Us</NavLink></li>
-                            <li><NavLink to="#!">Merch</NavLink></li>
-                            <li><NavLink to="/devblogs">Dev Blogs</NavLink></li>
+                            <li>
+                                <NavLink
+                                    to="/"
+                                    className={(navInfo) =>
+                                        navInfo.isActive ? activeClass.active_nav : ""
+                                    }
+                                >Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/about"
+                                    className={(navInfo) =>
+                                        navInfo.isActive ? activeClass.active_nav : ""
+                                    }
+                                >About Us</NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/merch"
+                                    className={(navInfo) =>
+                                        navInfo.isActive ? activeClass.active_nav : ""
+                                    }
+                                >Merch</NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/devblogs"
+                                    className={(navInfo) =>
+                                        navInfo.isActive ? activeClass.active_nav : ""
+                                    }
+                                >Dev Blogs</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
