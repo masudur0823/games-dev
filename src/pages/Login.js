@@ -32,18 +32,14 @@ function Login() {
           <div className="position-relative mt-4 mb-4">
             <input
               type="password"
-              id={'password'}
+              id={"password"}
               className="input_field text-white w-100"
               placeholder="Enter Password"
             />
-            <button
-              className="input_right_icon"
-              onClick={showPasswordHandler}
-            >
+            <button className="input_right_icon" onClick={showPasswordHandler}>
               {showPassword === false ? (
                 <>
                   <img src={eyeOpen} className="cursor-pointer" alt="" />
-                  {/* <div className="close_line"></div> */}
                 </>
               ) : (
                 <>
