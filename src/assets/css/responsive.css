@@ -3,6 +3,10 @@
     .fm_child1 {
         justify-content: space-around;
     }
+
+    .admin_container{
+        width: 1399px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
