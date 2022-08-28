@@ -1,8 +1,20 @@
 import logo from "../assets/images/logo.svg";
 import eyeOpen from "../assets/images/icons/eye-open.svg";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const showPasswordHandler = () => {
+    if (showPassword) {
+      document.getElementById("password").type = "password";
+      setShowPassword(false);
+    } else {
+      document.getElementById("password").type = "text";
+      setShowPassword(true);
+    }
+  };
   return (
     <div className="login_main">
       <div className="login_div text-white">
@@ -19,20 +31,35 @@ function Login() {
           />
           <div className="position-relative mt-4 mb-4">
             <input
-              type="text"
+              type="password"
+              id={'password'}
               className="input_field text-white w-100"
               placeholder="Enter Password"
             />
-            <button className="input_right_icon">
-              <img
-                src={eyeOpen}
-                className="cursor-pointer"
-                alt=""
-              />
-              {/* <div className="close_line"></div> */}
+            <button
+              className="input_right_icon"
+              onClick={showPasswordHandler}
+            >
+              {showPassword === false ? (
+                <>
+                  <img src={eyeOpen} className="cursor-pointer" alt="" />
+                  {/* <div className="close_line"></div> */}
+                </>
+              ) : (
+                <>
+                  <img src={eyeOpen} className="cursor-pointer" alt="" />
+                  <div className="close_line"></div>
+                </>
+              )}
             </button>
           </div>
-          <Link to="/dashboard" className="w-100"><input type="submit" value="Login" className="Login_btn text-white" /></Link>
+          <Link to="/dashboard" className="w-100">
+            <input
+              type="submit"
+              value="Login"
+              className="Login_btn text-white"
+            />
+          </Link>
         </form>
       </div>
     </div>
