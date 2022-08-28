@@ -135,6 +135,7 @@
 
     .menu a {
         font-size: 18px;
+        padding-bottom: 2px;
     }
 
     .footer-logo {
@@ -172,9 +173,11 @@
     .manImg {
         height: 269px;
     }
-    .admin_layout{
+
+    .admin_layout {
         grid-template-columns: 1fr;
     }
+
     .admin_layout_child1 {
         position: fixed;
         left: 0;
@@ -184,17 +187,17 @@
         transition: all 0.3s;
     }
 
-    .admin_overlay{
+    .admin_overlay {
         display: block;
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color:#0055b6a4;
+        background-color: #0055b6a4;
         z-index: 991;
         transition: all 0.3s;
     }
 
-    .close_icon{
+    .close_icon {
         font-size: 30px;
         position: absolute;
         right: 20px;
@@ -255,12 +258,13 @@
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
     }
 
-    .admin_header_inner{
+    .admin_header_inner {
         flex-direction: column;
         gap: 20px;
         padding: 15px;
     }
-    .admin_container{
+
+    .admin_container {
         padding: 40px 10px;
     }
 
@@ -271,7 +275,7 @@
         margin-top: 8px;
     }
 
-    .admin_Sidebar a{
+    .admin_Sidebar a {
         padding: 15px 0px;
         padding-left: 15px;
     }
@@ -423,7 +427,31 @@
     .input_right_icon {
         right: 10px;
     }
-    
+
+    .menu a {
+        padding-bottom: 0px;
+    }
+
+    .devBlogDetails .title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .devBlogDetails .date {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .devBlogDetails .date img {
+        width: 20px;
+    }
+    .devBlogDetails .desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .devBlogDetails button {
+        font-size: 14px;
+        line-height: initial;
+        padding: 5px 21px;
+    }
 }
 
 @media only screen and (max-width: 425px) {

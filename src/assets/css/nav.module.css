@@ -2,7 +2,7 @@
     content: '';
     position: absolute;
     left: 0px;
-    bottom: -18px;
+    bottom: 2px;
     width: 100%;
     border-bottom-width: 20px;
     border-left-width: 12px;
@@ -19,4 +19,13 @@
     height: 0px;
     width: 100%;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+    .active_nav::after {
+        bottom: -6px;
+        border-bottom-width: 11px;
+        border-left-width: 5px;
+        border-right-width: 5px;
+    }
 }

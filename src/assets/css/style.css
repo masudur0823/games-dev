@@ -96,6 +96,24 @@ a {
     cursor: pointer;
 }
 
+.btn_two {
+    font-weight: 500;
+    font-size: 20px;
+    color: #0054B6;
+    background: #fff;
+    border-radius: 30px;
+    border: 0;
+    padding: 8px 25px;
+    border: 1px solid #0054B6;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.btn_two:hover{
+    color: #fff;
+    background: #0054B6;
+}   
+
 /* common css end */
 
 /* header component area start */
@@ -117,7 +135,7 @@ a {
 
 .menu ul {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .menu li {
@@ -135,6 +153,7 @@ a {
     line-height: 29px;
     color: #27325D;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .menu a::after {
@@ -149,7 +168,7 @@ a {
     content: '';
     position: absolute;
     left: 0px;
-    bottom: -18px;
+    bottom: 2px;
     width: 100%;
     border-bottom-width: 20px;
     border-left-width: 12px;
@@ -174,6 +193,7 @@ a {
     display: grid;
     grid-template-columns: 8fr 4fr;
     grid-gap: 30px;
+    margin-bottom: 40px;
 }
 
 .fm_child1 {
@@ -478,6 +498,32 @@ a {
 
 /* login page area end */
 
+/* dev blog details area start */
+.devBlogDetails .title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: initial;
+    text-transform: capitalize;
+}
+
+.devBlogDetails .desc {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #8F8F8F;
+}
+
+.devBlogDetails .date {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    display: flex;
+    gap: 10px;
+}
+
+/* dev blog details area end */
+
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */
 .admin_layout_bg {
@@ -634,15 +680,15 @@ a {
     border-radius: 50%;
 }
 
-.admin_overlay{
+.admin_overlay {
     display: none;
 }
 
-.admin_mobile_arrow{
+.admin_mobile_arrow {
     display: none;
 }
 
-.m_arrow{
+.m_arrow {
     width: 48px;
     height: 48px;
 }
