@@ -525,6 +525,10 @@
         width: 100%;
     }
 
+    .changepass_ul li{
+        font-size: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 425px) {
