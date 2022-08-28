@@ -36,7 +36,7 @@ function AccountSetting() {
               <input
                 type="text"
                 className="input_field_c w-100 border"
-                placeholder="First Name"
+                placeholder="Last Name"
               />
               <img src={editIcon} className="input_icon_left" alt="" />
             </div>
@@ -45,9 +45,9 @@ function AccountSetting() {
           <div className="col-md-6">
             <div className="position-relative">
               <input
-                type="text"
+                type="email"
                 className="input_field_c w-100 border"
-                placeholder="First Name"
+                placeholder="Email"
               />
               <img src={sms} className="input_icon_left" alt="" />
             </div>
@@ -56,15 +56,15 @@ function AccountSetting() {
           <div className="col-md-6">
             <div className="position-relative">
               <input
-                type="text"
+                type="number"
                 className="input_field_c w-100 border"
-                placeholder="First Name"
+                placeholder="Phone"
               />
               <img src={call} className="input_icon_left" alt="" />
             </div>
           </div>
         </div>
-        <div className="text-center text-md-end mt-3 mt-md-5">
+        <div className="text-center text-md-end mt-4 mt-md-5">
           <button className="btn_one py-2 px-3 py-md-3 px-md-5">Update</button>
         </div>
       </div>

@@ -95,6 +95,8 @@ a {
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
+    background-color: transparent;
+    border: 0px;
 }
 
 .input_field_c {
@@ -119,10 +121,10 @@ a {
 .input_field_c::placeholder {
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    color: #8F8F8F;
+    color: #D9D9D9;
 }
 
 
@@ -970,7 +972,14 @@ a {
     opacity: 0;
     cursor: pointer;
 }
+
 /* Account Settings end */
+
+
+.horizontal_line{
+    border-bottom: 1px solid #D9D9D9;
+    margin: 80px 0px;
+}
 
 /* ---------------------------------------------------------- */
 /* ---------------------------------------------------------- */

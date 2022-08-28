@@ -18,21 +18,26 @@ function Blog() {
             <div className="child child3">
               <input
                 type="text"
-                className="input_field_c w-100 border mb-2 mb-md-4"
+                className="input_field_c w-100 border mb-2 mb-md-4 px-4"
                 placeholder="Enter Title"
               />
               <input
-                type="email"
-                className="input_field_c w-100 border mb-2 mb-md-4"
-                placeholder="Email"
+                type="text"
+                className="input_field_c w-100 border mb-2 mb-md-4 px-4"
+                placeholder="Add Keywords tags"
               />
-              <input
-                type="number"
-                className="input_field_c w-100 border mb-2 mb-md-4"
-                placeholder="Phone"
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                className="input_field_c w-100 border mb-2 mb-md-4 px-4"
+                placeholder="Enter Description"
               />
-              <div className="text-center text-md-end mt-3 mt-md-5">
-                <button className="btn_one py-2 px-3 py-md-3 px-md-5">Add</button>
+              <div className="text-center text-md-end mt-2 mt-md-3">
+                <button className="btn_one py-2 px-3 py-md-3 px-md-5">
+                  Add
+                </button>
               </div>
             </div>
           </div>
