@@ -29,6 +29,7 @@ function Login() {
                 className="cursor-pointer"
                 alt=""
               />
+              {/* <div className="close_line"></div> */}
             </button>
           </div>
           <Link to="/dashboard" className="w-100"><input type="submit" value="Login" className="Login_btn text-white" /></Link>

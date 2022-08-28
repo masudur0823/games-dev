@@ -35,7 +35,7 @@ function Blog() {
                 placeholder="Enter Description"
               />
               <div className="text-center text-md-end mt-2 mt-md-3">
-                <button className="btn_one py-2 px-3 py-md-3 px-md-5">
+                <button className="btn_one py-2 px-3 py-md-3 px-md-5 btn_w_100">
                   Add
                 </button>
               </div>

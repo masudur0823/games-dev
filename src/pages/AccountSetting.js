@@ -65,7 +65,7 @@ function AccountSetting() {
           </div>
         </div>
         <div className="text-center text-md-end mt-4 mt-md-5">
-          <button className="btn_one py-2 px-3 py-md-3 px-md-5">Update</button>
+          <button className="btn_one py-2 px-3 py-md-3 px-md-5 btn_w_100">Update</button>
         </div>
       </div>
     </AdminLayout>
