@@ -11,8 +11,8 @@ import activeClass from "../../assets/css/adminNav.module.css";
 function AdminSidebar(props) {
   console.log(props.handleClose);
   return (
-    <>
-      <NavLink to="/dashboard">
+    <div>
+      <NavLink to="/">
         <img src={logo} className="admin_logo" alt="" />
       </NavLink>
       <ul className="admin_Sidebar list-unstyled">
@@ -81,7 +81,7 @@ function AdminSidebar(props) {
       <div className="mt-3 mt-md-5 mb-4">
         <img src={img} className="w-100" alt="" />
       </div>
-    </>
+    </div>
   );
 }
 

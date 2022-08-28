@@ -357,6 +357,10 @@
     .login-logo {
         width: 80px;
     }
+
+    .dash_div1 {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -436,22 +440,31 @@
         font-size: 30px;
         line-height: 30px;
     }
+
     .devBlogDetails .date {
         font-size: 15px;
         margin-top: 20px;
     }
+
     .devBlogDetails .date img {
         width: 20px;
     }
+
     .devBlogDetails .desc {
         font-size: 14px;
         line-height: 24px;
     }
+
     .devBlogDetails button {
         font-size: 14px;
         line-height: initial;
         padding: 5px 21px;
     }
+
+    .dash_div1 {
+        padding: 15px;
+    }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -467,12 +480,21 @@
     .devBlog_image {
         width: 100%;
     }
-}
 
-@media only screen and (max-width: 375px) {
-    /* .projectSlider .alice-carousel__stage-item {
-        margin: 0px -25px;
-    } */
+
+    .dashImg {
+        height: 200px;
+        margin-top: 0px !important;
+    }
+
+    .das_slider_btn button {
+        font-size: 15px;
+        gap: 5px;
+    }
+
+    .das_slider_btn img{
+        width: 20px;
+    }
 }
 
 /* responsive end */
